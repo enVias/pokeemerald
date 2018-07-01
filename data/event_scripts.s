@@ -3224,7 +3224,7 @@ gUnknown_08272DB3:: @ 8272DB3
 
 gUnknown_08272DE3:: @ 8272DE3
 //	.string "{PLAYER} is out of usable\nPOKéMON!\p{PLAYER} whited out!$"
-	.string "{PLAYER}’s POKéMON are too tired\nto continue.\pLet’s give them a rest.$"
+	.string "{PLAYER}’s POKéMON are too tired to\n continue.\pLet’s give them a rest.$"
 
 gUnknown_08272E0F:: @ 8272E0F
 	.string "Registered {STR_VAR_1} {STR_VAR_2}\nin the POKéNAV.$"
