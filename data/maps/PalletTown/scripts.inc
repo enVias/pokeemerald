@@ -12,7 +12,8 @@ GivePokemon:
 	setflag FLAG_SYS_POKEDEX_GET
 	setflag FLAG_SYS_NATIONAL_DEX
 	special EnableNationalPokedex
-	givemon SPECIES_PIDGEY, 5, ITEM_NONE, 0x0, 0x0, 0
+	givemon SPECIES_EEVEE, 5, ITEM_NONE, 0x0, 0x0, 0
+	giveitem ITEM_POKE_BALL, 10
 	end
 
 FatManScript::
