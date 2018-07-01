@@ -14829,5 +14829,4 @@ gText_082C877B:: @ 82C877B
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/PalletTown/scripts.inc"
-
 	.include "data/maps/Pallet_Town_House1/scripts.inc"
