@@ -45,6 +45,24 @@ EWRAM_DATA static u8 sWildEncountersDisabled = 0;
 EWRAM_DATA static u32 sFeebasRngValue = 0;
 
 // const rom data
+const struct WildPokemon gPalletTown_LandMons[] =
+{
+	{2, 2, SPECIES_CATERPIE},
+	{2, 2, SPECIES_WEEDLE},
+	{2, 2, SPECIES_CATERPIE},
+	{3, 3, SPECIES_CATERPIE},
+	{3, 3, SPECIES_WEEDLE},
+	{3, 3, SPECIES_CATERPIE},
+	{3, 3, SPECIES_CATERPIE},
+	{4, 4, SPECIES_METAPOD},
+	{4, 4, SPECIES_KAKUNA},
+	{4, 4, SPECIES_METAPOD},
+	{6, 6, SPECIES_BUTTERFREE},
+	{6, 6, SPECIES_BEEDRILL},
+};
+
+const struct WildPokemonInfo gPalletTown_LandMonsInfo = { 20, gPalletTown_LandMons };
+
 const struct WildPokemon gRoute101_LandMons[] =
 {
 	{2, 2, SPECIES_WURMPLE},
@@ -3276,6 +3294,14 @@ const struct WildPokemonInfo gMeteorFalls_StevensCave_LandMonsInfo = {10, gMeteo
 
 const struct WildPokemonHeader gWildMonHeaders[] =
 {
+	{
+		.mapGroup = MAP_GROUP(PALLET_TOWN),
+		.mapNum = MAP_NUM(PALLET_TOWN),
+		.landMonsInfo = &gPalletTown_LandMonsInfo,
+		.waterMonsInfo = NULL,
+		.rockSmashMonsInfo = NULL,
+		.fishingMonsInfo = NULL,
+	},
 	{
 		.mapGroup = MAP_GROUP(ROUTE101),
 		.mapNum = MAP_NUM(ROUTE101),
