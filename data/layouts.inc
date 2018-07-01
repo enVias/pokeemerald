@@ -439,3 +439,5 @@
 	.include "data/layouts/SootopolisCity_MysteryEventsHouse_1F/layout.inc"
 	.include "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/layout.inc"
 	.include "data/layouts/UnknownMap_08481DBC/layout.inc"
+	.include "data/layouts/PalletTown/layout.inc"
+	.include "data/layouts/Pallet_Town_House1/layout.inc"

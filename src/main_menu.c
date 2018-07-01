@@ -786,7 +786,7 @@ void Task_HandleMainMenuAPressed(u8 taskId)
             default:
                 gPlttBufferUnfaded[0] = RGB_BLACK;
                 gPlttBufferFaded[0] = RGB_BLACK;
-                gTasks[taskId].func = task_new_game_prof_birch_speech_1;
+                gTasks[taskId].func = task_new_game_prof_birch_speech_16;
                 break;
             case 1:
                 gPlttBufferUnfaded[0] = RGB_BLACK;
@@ -1296,7 +1296,7 @@ void task_new_game_prof_birch_speech_15(u8 taskId)
 
 void task_new_game_prof_birch_speech_16(u8 taskId)
 {
-    if ((gMain.newKeys & A_BUTTON) || (gMain.newKeys & B_BUTTON))
+    if (!gPaletteFade.active)
     {
         BeginNormalPaletteFade(-1, 0, 0, 16, RGB_BLACK);
         gTasks[taskId].func = task_new_game_prof_birch_speech_17;
@@ -1519,32 +1519,16 @@ void new_game_prof_birch_speech_part2_start(void)
     DmaFill32(3, 0, OAM, OAM_SIZE);
     DmaFill16(3, 0, PLTT, PLTT_SIZE);
     ResetPaletteFade();
-    LZ77UnCompVram(gBirchIntroShadowGfx, (u8*)VRAM);
-    LZ77UnCompVram(gUnknown_082FEEF0, (u8*)(VRAM + 0x3800));
     LoadPalette(gUnknown_082FECFC, 0, 64);
     LoadPalette(&gUnknown_082FF018[1], 1, 16);
     ResetTasks();
-    taskId = CreateTask(task_new_game_prof_birch_speech_part2_1, 0);
+    taskId = CreateTask(task_new_game_prof_birch_speech_part2_12, 0);
     gTasks[taskId].data[7] = 5;
     gTasks[taskId].data[4] = -60;
     ScanlineEffect_Stop();
     ResetSpriteData();
     FreeAllSpritePalettes();
     dp13_810BB8C();
-    AddBirchSpeechObjects(taskId);
-    if (gSaveBlock2Ptr->playerGender != MALE)
-    {
-        gTasks[taskId].data[6] = FEMALE;
-        spriteId = gTasks[taskId].data[11];
-    }
-    else
-    {
-        gTasks[taskId].data[6] = MALE;
-        spriteId = gTasks[taskId].data[10];
-    }
-    gSprites[spriteId].pos1.x = 0xB4;
-    gSprites[spriteId].pos1.y = 0x3C;
-    gSprites[spriteId].invisible = 0;
     gTasks[taskId].data[2] = spriteId;
     SetGpuReg(REG_OFFSET_BG1HOFS, -60);
     BeginNormalPaletteFade(-1, 0, 16, 0, 0);

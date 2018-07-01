@@ -527,3 +527,6 @@
 	.include "data/maps/Route119_House/events.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/events.inc"
 
+	.include "data/maps/PalletTown/events.inc"
+
+	.include "data/maps/Pallet_Town_House1/events.inc"
