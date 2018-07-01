@@ -2973,10 +2973,11 @@ BattleScript_LocalBattleLost::
 	jumpifbattletype BATTLE_TYPE_EREADER_TRAINER, BattleScript_LocalBattleLostEnd
 	jumpifhalfword CMP_EQUAL, gTrainerBattleOpponent_A, 0x400, BattleScript_LocalBattleLostEnd
 BattleScript_LocalBattleLostPrintWhiteOut::
-	printstring STRINGID_PLAYERWHITEOUT
-	waitmessage 0x40
-	printstring STRINGID_PLAYERWHITEOUT2
-	waitmessage 0x40
+//	printstring STRINGID_PLAYERWHITEOUT
+//	waitmessage 0x40
+//	printstring STRINGID_PLAYERWHITEOUT2
+//	waitmessage 0x40
+	end
 BattleScript_LocalBattleLostEnd::
 	end2
 BattleScript_CheckDomeDrew::
