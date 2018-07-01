@@ -132,7 +132,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToStart(void)
 {
-    Overworld_SetWarpDestination(0, 57, -1, -1, -1); // pallet town
+    Overworld_SetWarpDestination(0, 57, 0, -1, -1); // pallet town
     warp_in();
 }
 
