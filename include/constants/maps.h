@@ -60,7 +60,7 @@
 #define MAP_UNDERWATER6      (55 | (0 << 8))
 #define MAP_UNDERWATER7      (56 | (0 << 8))
 #define MAP_PALLET_TOWN      (57 | (0 << 8))
-#define MAP_NEW_MAP1         (58 | (0 << 8))
+#define MAP_YIPPY_TOWN       (58 | (0 << 8))
 
 // Map Group 1
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

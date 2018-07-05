@@ -58,7 +58,7 @@ gMapGroup0::
 	.4byte Underwater6
 	.4byte Underwater7
 	.4byte PalletTown
-	.4byte NewMap1
+	.4byte YippyTown
 
 	.align 2
 gMapGroup1::

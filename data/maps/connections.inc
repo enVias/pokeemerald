@@ -12,7 +12,6 @@
 	.include "data/maps/FortreeCity/connections.inc"
 	.include "data/maps/LilycoveCity/connections.inc"
 	.include "data/maps/MossdeepCity/connections.inc"
-	.include "data/maps/SootopolisCity/connections.inc"
 	.include "data/maps/EverGrandeCity/connections.inc"
 	.include "data/maps/Route101/connections.inc"
 	.include "data/maps/Route102/connections.inc"
@@ -64,3 +63,4 @@
 	.include "data/maps/BattleFrontier_OutsideWest/connections.inc"
 	.include "data/maps/BattleFrontier_OutsideEast/connections.inc"
 	.include "data/maps/PalletTown/connections.inc"
+	.include "data/maps/YippyTown/connections.inc"

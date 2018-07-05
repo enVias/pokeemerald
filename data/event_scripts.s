@@ -14832,5 +14832,5 @@ gText_082C877B:: @ 82C877B
 	.include "data/maps/PalletTown/scripts.inc"
 	.include "data/maps/Pallet_Town_House1/scripts.inc"
 
-	.include "data/maps/NewMap1/scripts.inc"
-	.include "data/maps/NewMap1/text.inc"
+	.include "data/maps/YippyTown/scripts.inc"
+	.include "data/maps/YippyTown/text.inc"

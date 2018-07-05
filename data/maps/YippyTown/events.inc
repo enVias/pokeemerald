@@ -1,2 +1,2 @@
-NewMap1_MapEvents::
+YippyTown_MapEvents::
 	map_events 0x0, 0x0, 0x0, 0x0

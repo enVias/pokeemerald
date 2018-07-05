@@ -441,4 +441,4 @@
 	.include "data/layouts/UnknownMap_08481DBC/layout.inc"
 	.include "data/layouts/PalletTown/layout.inc"
 	.include "data/layouts/Pallet_Town_House1/layout.inc"
-	.include "data/layouts/NewMap1/layout.inc"
+	.include "data/layouts/YippyTown/layout.inc"

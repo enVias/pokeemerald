@@ -1,4 +1,4 @@
-Route113_EventObjects: @ 8529B2C
+Route113_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_LITTLE_BOY_1, 0, 66, 12, 3, 5, 1, 0, 0, 0, Route113_EventScript_1F2193, 0
 	object_event 2, EVENT_OBJ_GFX_GENTLEMAN, 0, 36, 10, 3, 3, 0, 1, 0, 0, Route113_EventScript_1F218A, 0
 	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, 0, 62, 8, 3, 8, 0, 0, 1, 3, Route113_EventScript_1F21C0, 0
@@ -16,12 +16,12 @@ Route113_EventObjects: @ 8529B2C
 	object_event 15, EVENT_OBJ_GFX_PICNICKER, 0, 7, 6, 3, 26, 1, 3, 1, 6, Route113_EventScript_1F22FF, 0
 	object_event 16, EVENT_OBJ_GFX_MAN_6, 0, 7, 13, 3, 25, 1, 3, 1, 6, Route113_EventScript_1F2316, 0
 
-Route113_MapWarps: @ 8529CAC
+Route113_MapWarps::
 	warp_def 33, 5, 0, 0, MAP_ROUTE113_GLASS_WORKSHOP
 	warp_def 41, 12, 0, 0, MAP_TERRA_CAVE_ENTRANCE
 	warp_def 88, 5, 0, 0, MAP_TERRA_CAVE_ENTRANCE
 
-Route113_MapCoordEvents: @ 8529CC4
+Route113_MapCoordEvents::
 	coord_event 19, 11, 3, 0, 8, 0, 0, 0x0
 	coord_event 19, 10, 3, 0, 8, 0, 0, 0x0
 	coord_event 19, 12, 3, 0, 8, 0, 0, 0x0
@@ -42,16 +42,15 @@ Route113_MapCoordEvents: @ 8529CC4
 	coord_event 87, 6, 3, 0, 8, 0, 0, 0x0
 	coord_event 87, 7, 3, 0, 8, 0, 0, 0x0
 
-Route113_MapBGEvents: @ 8529DF4
+Route113_MapBGEvents::
 	bg_event 85, 6, 0, 0, 0, Route113_EventScript_1F219C
 	bg_event 12, 9, 0, 0, 0, Route113_EventScript_1F21A5
 	bg_event 58, 4, 3, 0, 0, Route113_EventScript_1F21B7
 	bg_event 31, 5, 0, 0, 0, Route113_EventScript_1F21AE
-	bg_event 49, 8, 3, 8, 0, ITEM_GREAT_BALL, 0, 0
-	bg_event 66, 3, 3, 7, 0, ITEM_ETHER, 3, 0
-	bg_event 22, 5, 3, 7, 0, ITEM_TM32, 30, 0
-	bg_event 73, 3, 3, 7, 0, ITEM_NUGGET, 98, 0
+	bg_event 49, 8, 3, 8, 0, ITEM_GREAT_BALL
+	bg_event 66, 3, 3, 7, 0, ITEM_ETHER
+	bg_event 22, 5, 3, 7, 0, ITEM_TM32
+	bg_event 73, 3, 3, 7, 0, ITEM_NUGGET
 
-Route113_MapEvents:: @ 8529E54
+Route113_MapEvents::
 	map_events Route113_EventObjects, Route113_MapWarps, Route113_MapCoordEvents, Route113_MapBGEvents
-

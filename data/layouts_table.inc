@@ -443,4 +443,4 @@ gMapLayouts::
 	.4byte UnknownMap_08481DBC_Layout
 	.4byte PalletTown_Layout
 	.4byte Pallet_Town_House1_Layout
-	.4byte NewMap1_Layout
+	.4byte YippyTown_Layout
