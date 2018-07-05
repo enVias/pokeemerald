@@ -1,4 +1,4 @@
-Route101_EventObjects: @ 8527E98
+Route101_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_YOUNGSTER, 0, 16, 8, 3, 1, 0, 0, 0, 0, Route101_EventScript_1EBDFB, 0
 	object_event 2, EVENT_OBJ_GFX_PROF_BIRCH, 0, 9, 13, 0, 71, 0, 0, 0, 0, 0x0, 720
 	object_event 3, EVENT_OBJ_GFX_BIRCHS_BAG, 0, 7, 14, 3, 1, 0, 0, 0, 0, Route101_EventScript_1EBE16, 700
@@ -6,7 +6,7 @@ Route101_EventObjects: @ 8527E98
 	object_event 5, EVENT_OBJ_GFX_PROF_BIRCH, 0, 5, 11, 3, 1, 0, 0, 0, 0, Route101_EventScript_272141, 897
 	object_event 6, EVENT_OBJ_GFX_BOY_2, 0, 2, 13, 3, 5, 1, 1, 0, 0, Route101_EventScript_1EBE04, 991
 
-Route101_MapCoordEvents: @ 8527F28
+Route101_MapCoordEvents::
 	coord_event 10, 19, 3, 0, VAR_0x4060, 1, 0, Route101_EventScript_1EBCDE
 	coord_event 11, 19, 3, 0, VAR_0x4060, 1, 0, Route101_EventScript_1EBCDE
 	coord_event 10, 18, 3, 0, VAR_0x4060, 2, 0, Route101_EventScript_1EBD4E
@@ -17,9 +17,8 @@ Route101_MapCoordEvents: @ 8527F28
 	coord_event 6, 18, 3, 0, VAR_0x4060, 2, 0, Route101_EventScript_1EBD64
 	coord_event 7, 13, 3, 0, VAR_0x4060, 2, 0, Route101_EventScript_1EBD7A
 
-Route101_MapBGEvents: @ 8527FB8
+Route101_MapBGEvents::
 	bg_event 5, 9, 0, 0, 0, Route101_EventScript_1EBE0D
 
-Route101_MapEvents:: @ 8527FC4
+Route101_MapEvents::
 	map_events Route101_EventObjects, 0x0, Route101_MapCoordEvents, Route101_MapBGEvents
-

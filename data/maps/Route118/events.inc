@@ -1,4 +1,4 @@
-Route118_EventObjects: @ 852AAB4
+Route118_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_BERRY_TREE, 0, 35, 5, 3, 12, 0, 0, 0, 31, BerryTreeScript, 0
 	object_event 2, EVENT_OBJ_GFX_BERRY_TREE, 0, 36, 5, 3, 12, 0, 0, 0, 32, BerryTreeScript, 0
 	object_event 3, EVENT_OBJ_GFX_BERRY_TREE, 0, 37, 5, 3, 12, 0, 0, 0, 33, BerryTreeScript, 0
@@ -21,26 +21,25 @@ Route118_EventObjects: @ 852AAB4
 	object_event 20, EVENT_OBJ_GFX_ITEM_BALL, 0, 69, 7, 3, 1, 1, 1, 0, 0, Route118_EventScript_290ED3, 1121
 	object_event 21, EVENT_OBJ_GFX_YOUNGSTER, 0, 7, 7, 3, 8, 1, 1, 1, 4, Route118_EventScript_1F40A7, 0
 
-Route118_MapWarps: @ 852ACAC
+Route118_MapWarps::
 	warp_def 42, 6, 0, 0, MAP_TERRA_CAVE_ENTRANCE
 	warp_def 9, 6, 0, 0, MAP_TERRA_CAVE_ENTRANCE
 
-Route118_MapCoordEvents: @ 852ACBC
+Route118_MapCoordEvents::
 	coord_event 43, 11, 3, 0, VAR_0x4071, 0, 0, Route118_EventScript_1F3E8E
 	coord_event 44, 11, 3, 0, VAR_0x4071, 0, 0, Route118_EventScript_1F3EAE
 	coord_event 45, 11, 3, 0, VAR_0x4071, 0, 0, Route118_EventScript_1F3EC4
 
-Route118_MapBGEvents: @ 852ACEC
-	bg_event 47, 14, 0, 8, 0, ITEM_MASTER_BALL, 0, 0
+Route118_MapBGEvents::
+	bg_event 47, 14, 0, 8, 0, ITEM_MASTER_BALL
 	bg_event 13, 6, 0, 0, 0, Route118_EventScript_1F3E7C
 	bg_event 56, 8, 0, 0, 0, Route118_EventScript_1F3E85
-	bg_event 67, 6, 0, 8, 0, ITEM_LUXURY_BALL, 0, 0
-	bg_event 29, 5, 0, 8, 0, ITEM_HARBOR_MAIL, 0, 0
-	bg_event 47, 5, 0, 8, 0, ITEM_SPELON_BERRY, 0, 0
-	bg_event 46, 5, 0, 8, 0, ITEM_PETAYA_BERRY, 0, 0
-	bg_event 31, 13, 3, 7, 0, ITEM_IRON, 67, 0
-	bg_event 12, 14, 3, 7, 0, ITEM_HEART_SCALE, 66, 0
+	bg_event 67, 6, 0, 8, 0, ITEM_LUXURY_BALL
+	bg_event 29, 5, 0, 8, 0, ITEM_HARBOR_MAIL
+	bg_event 47, 5, 0, 8, 0, ITEM_SPELON_BERRY
+	bg_event 46, 5, 0, 8, 0, ITEM_PETAYA_BERRY
+	bg_event 31, 13, 3, 7, 0, ITEM_IRON
+	bg_event 12, 14, 3, 7, 0, ITEM_HEART_SCALE
 
-Route118_MapEvents:: @ 852AD58
+Route118_MapEvents::
 	map_events Route118_EventObjects, Route118_MapWarps, Route118_MapCoordEvents, Route118_MapBGEvents
-

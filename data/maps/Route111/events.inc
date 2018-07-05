@@ -1,4 +1,4 @@
-Route111_EventObjects: @ 85291F0
+Route111_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_MAN_1, 0, 13, 114, 3, 8, 0, 0, 0, 0, Route111_EventScript_1F0FC5, 768
 	object_event 2, EVENT_OBJ_GFX_WOMAN_2, 0, 13, 113, 0, 8, 0, 0, 0, 0, 0x0, 769
 	object_event 3, EVENT_OBJ_GFX_LASS, 0, 13, 113, 0, 8, 1, 0, 0, 0, 0x0, 770
@@ -46,14 +46,14 @@ Route111_EventObjects: @ 85291F0
 	object_event 45, EVENT_OBJ_GFX_HIPSTER, 0, 19, 53, 3, 8, 1, 1, 0, 0, 0x0, 875
 	object_event 46, EVENT_OBJ_GFX_FAT_MAN, 0, 19, 101, 3, 7, 1, 1, 0, 0, Route111_EventScript_1F11E4, 843
 
-Route111_MapWarps: @ 8529640
+Route111_MapWarps::
 	warp_def 13, 113, 0, 0, MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE
 	warp_def 29, 87, 0, 0, MAP_DESERT_RUINS
 	warp_def 26, 18, 0, 0, MAP_ROUTE111_OLD_LADYS_REST_STOP
 	warp_def 19, 58, 0, 0, MAP_MIRAGE_TOWER_1F
 	warp_def 31, 113, 0, 0, MAP_TRAINER_HILL_ENTRANCE
 
-Route111_MapCoordEvents: @ 8529668
+Route111_MapCoordEvents::
 	coord_event 12, 62, 3, 0, 0, 0, 0, Route111_EventScript_1F0FBD
 	coord_event 11, 61, 3, 0, VAR_TEMP_3, 0, 0, Route111_EventScript_1F0F0A
 	coord_event 12, 61, 3, 0, VAR_TEMP_3, 0, 0, Route111_EventScript_1F0F0A
@@ -89,26 +89,25 @@ Route111_MapCoordEvents: @ 8529668
 	coord_event 12, 43, 3, 0, 0, 0, 0, Route111_EventScript_1F0FBD
 	coord_event 11, 44, 3, 0, 0, 0, 0, Route111_EventScript_1F0FBD
 
-Route111_MapBGEvents: @ 8529888
+Route111_MapBGEvents::
 	bg_event 16, 114, 0, 0, 0, Route111_EventScript_1F115C
 	bg_event 24, 126, 0, 0, 0, Route111_EventScript_1F1153
 	bg_event 7, 66, 0, 0, 0, Route111_EventScript_1F1165
 	bg_event 13, 6, 0, 0, 0, Route111_EventScript_1F116E
-	bg_event 24, 36, 0, 8, 0, ITEM_FAB_MAIL, 0, 0
-	bg_event 34, 50, 0, 8, 0, ITEM_LUM_BERRY, 0, 0
-	bg_event 33, 34, 0, 8, 0, ITEM_ORANGE_MAIL, 0, 0
+	bg_event 24, 36, 0, 8, 0, ITEM_FAB_MAIL
+	bg_event 34, 50, 0, 8, 0, ITEM_LUM_BERRY
+	bg_event 33, 34, 0, 8, 0, ITEM_ORANGE_MAIL
 	bg_event 25, 19, 0, 0, 0, Route111_EventScript_1F1177
-	bg_event 35, 1, 0, 8, 0, ITEM_POTION, 0, 0
-	bg_event 35, 31, 0, 8, 0, ITEM_POMEG_BERRY, 0, 0
-	bg_event 26, 70, 0, 7, 0, ITEM_STARDUST, 2, 0
-	bg_event 27, 27, 3, 8, 0, ITEM_REVIVAL_HERB, 0, 0
+	bg_event 35, 1, 0, 8, 0, ITEM_POTION
+	bg_event 35, 31, 0, 8, 0, ITEM_POMEG_BERRY
+	bg_event 26, 70, 0, 7, 0, ITEM_STARDUST
+	bg_event 27, 27, 3, 8, 0, ITEM_REVIVAL_HERB
 	bg_event 7, 84, 3, 0, 0, Route111_EventScript_1F1180
-	bg_event 14, 19, 0, 8, 0, ITEM_PAMTRE_BERRY, 0, 0
-	bg_event 13, 19, 0, 8, 0, ITEM_RABUTA_BERRY, 0, 0
-	bg_event 19, 55, 0, 7, 0, ITEM_PROTEIN, 56, 0
-	bg_event 35, 66, 0, 7, 0, ITEM_RARE_CANDY, 57, 0
+	bg_event 14, 19, 0, 8, 0, ITEM_PAMTRE_BERRY
+	bg_event 13, 19, 0, 8, 0, ITEM_RABUTA_BERRY
+	bg_event 19, 55, 0, 7, 0, ITEM_PROTEIN
+	bg_event 35, 66, 0, 7, 0, ITEM_RARE_CANDY
 	bg_event 24, 116, 0, 0, 0, Route111_EventScript_1F146C
 
-Route111_MapEvents:: @ 8529960
+Route111_MapEvents::
 	map_events Route111_EventObjects, Route111_MapWarps, Route111_MapCoordEvents, Route111_MapBGEvents
-

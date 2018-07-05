@@ -530,3 +530,5 @@
 	.include "data/maps/PalletTown/events.inc"
 
 	.include "data/maps/Pallet_Town_House1/events.inc"
+
+	.include "data/maps/NewMap1/events.inc"

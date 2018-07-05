@@ -1,4 +1,4 @@
-Route116_EventObjects: @ 852A4B8
+Route116_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_BERRY_TREE, 0, 18, 2, 3, 12, 0, 0, 0, 25, BerryTreeScript, 0
 	object_event 2, EVENT_OBJ_GFX_BERRY_TREE, 0, 19, 2, 3, 12, 0, 0, 0, 26, BerryTreeScript, 0
 	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, 0, 12, 7, 3, 16, 0, 0, 1, 3, Route116_EventScript_1F2E89, 0
@@ -28,29 +28,28 @@ Route116_EventObjects: @ 852A4B8
 	object_event 27, EVENT_OBJ_GFX_YOUNGSTER, 0, 36, 13, 3, 18, 1, 1, 1, 5, Route116_EventScript_1F3086, 0
 	object_event 28, EVENT_OBJ_GFX_HIKER, 0, 42, 13, 3, 9, 1, 1, 1, 5, Route116_EventScript_1F306F, 0
 
-Route116_MapWarps: @ 852A758
+Route116_MapWarps::
 	warp_def 47, 8, 0, 0, MAP_RUSTURF_TUNNEL
 	warp_def 38, 8, 0, 0, MAP_ROUTE116_TUNNELERS_REST_HOUSE
 	warp_def 65, 10, 0, 2, MAP_RUSTURF_TUNNEL
 	warp_def 59, 13, 0, 0, MAP_TERRA_CAVE_ENTRANCE
 	warp_def 79, 6, 0, 0, MAP_TERRA_CAVE_ENTRANCE
 
-Route116_MapCoordEvents: @ 852A780
+Route116_MapCoordEvents::
 	coord_event 47, 9, 3, 0, VAR_0x406F, 1, 0, Route116_EventScript_1F2D95
 
-Route116_MapBGEvents: @ 852A790
+Route116_MapBGEvents::
 	bg_event 5, 10, 0, 0, 0, Route116_EventScript_1F2D57
 	bg_event 48, 9, 0, 0, 0, Route116_EventScript_1F2D60
 	bg_event 40, 9, 0, 0, 0, Route116_EventScript_1F2D69
-	bg_event 71, 4, 0, 8, 0, ITEM_FLUFFY_TAIL, 0, 0
-	bg_event 79, 11, 0, 8, 0, 91, 0, 0
+	bg_event 71, 4, 0, 8, 0, ITEM_FLUFFY_TAIL
+	bg_event 79, 11, 0, 8, 0, 91
 	bg_event 16, 12, 0, 0, 0, Route116_EventScript_1F2D72
 	bg_event 29, 10, 0, 0, 0, Route116_EventScript_1F2D7B
-	bg_event 56, 6, 0, 8, 0, 102, 0, 0
-	bg_event 55, 15, 0, 8, 0, 112, 0, 0
-	bg_event 22, 9, 3, 7, 0, ITEM_SUPER_POTION, 45, 0
-	bg_event 70, 13, 3, 7, 0, ITEM_BLACK_GLASSES, 96, 0
+	bg_event 56, 6, 0, 8, 0, 102
+	bg_event 55, 15, 0, 8, 0, 112
+	bg_event 22, 9, 3, 7, 0, ITEM_SUPER_POTION
+	bg_event 70, 13, 3, 7, 0, ITEM_BLACK_GLASSES
 
-Route116_MapEvents:: @ 852A814
+Route116_MapEvents::
 	map_events Route116_EventObjects, Route116_MapWarps, Route116_MapCoordEvents, Route116_MapBGEvents
-

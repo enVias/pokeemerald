@@ -1,4 +1,4 @@
-Route110_EventObjects: @ 8528CF0
+Route110_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_CAMPER, 0, 17, 90, 3, 8, 0, 0, 0, 0, Route110_EventScript_1EF338, 0
 	object_event 2, EVENT_OBJ_GFX_CYCLING_TRIATHLETE_M, 0, 29, 79, 4, 8, 0, 0, 0, 0, Route110_EventScript_1EF32F, 0
 	object_event 3, EVENT_OBJ_GFX_OLD_WOMAN_1, 0, 14, 69, 3, 3, 0, 1, 0, 0, Route110_EventScript_1EF326, 0
@@ -36,7 +36,7 @@ Route110_EventObjects: @ 8528CF0
 	object_event 35, EVENT_OBJ_GFX_ITEM_BALL, 0, 6, 38, 3, 1, 1, 1, 0, 0, Route110_EventScript_290D8E, 1141
 	object_event 36, EVENT_OBJ_GFX_PROF_BIRCH, 0, 9, 79, 3, 1, 1, 1, 0, 0, 0x0, 837
 
-Route110_MapWarps: @ 8529050
+Route110_MapWarps::
 	warp_def 35, 24, 3, 0, MAP_NEW_MAUVILLE_ENTRANCE
 	warp_def 11, 66, 0, 0, MAP_ROUTE110_TRICK_HOUSE_ENTRANCE
 	warp_def 15, 16, 0, 0, MAP_ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE
@@ -44,7 +44,7 @@ Route110_MapWarps: @ 8529050
 	warp_def 16, 88, 0, 0, MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE
 	warp_def 19, 88, 0, 2, MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE
 
-Route110_MapCoordEvents: @ 8529080
+Route110_MapCoordEvents::
 	coord_event 28, 92, 3, 0, VAR_0x40A9, 2, 0, Route110_EventScript_1EF661
 	coord_event 29, 92, 3, 0, VAR_0x40A9, 2, 0, Route110_EventScript_1EF661
 	coord_event 33, 56, 3, 0, VAR_0x4069, 0, 0, Route110_EventScript_1EF74D
@@ -55,25 +55,24 @@ Route110_MapCoordEvents: @ 8529080
 	coord_event 9, 85, 3, 0, VAR_0x40DA, 1, 0, Route110_EventScript_1EF9E1
 	coord_event 10, 85, 3, 0, VAR_0x40DA, 1, 0, Route110_EventScript_1EF9EC
 
-Route110_MapBGEvents: @ 8529110
+Route110_MapBGEvents::
 	bg_event 15, 25, 0, 0, 0, Route110_EventScript_1EF353
 	bg_event 9, 51, 0, 0, 0, Route110_EventScript_1EF365
 	bg_event 14, 88, 0, 0, 0, Route110_EventScript_1EF34A
 	bg_event 20, 94, 0, 0, 0, Route110_EventScript_1EF341
 	bg_event 7, 79, 0, 0, 0, Route110_EventScript_1EF35C
 	bg_event 3, 17, 0, 0, 0, Route110_EventScript_1EF36E
-	bg_event 16, 25, 0, 8, 0, ITEM_MACHO_BRACE, 0, 0
-	bg_event 17, 25, 0, 8, 0, ITEM_SOUL_DEW, 0, 0
+	bg_event 16, 25, 0, 8, 0, ITEM_MACHO_BRACE
+	bg_event 17, 25, 0, 8, 0, ITEM_SOUL_DEW
 	bg_event 33, 39, 3, 0, 0, Route110_EventScript_1EF377
 	bg_event 37, 70, 3, 0, 0, Route110_EventScript_1EF380
 	bg_event 8, 67, 0, 0, 0, Route110_EventScript_1EF389
 	bg_event 32, 93, 0, 0, 0, Route110_EventScript_1EF392
-	bg_event 35, 39, 3, 7, 0, ITEM_REVIVE, 54, 0
-	bg_event 33, 45, 3, 7, 0, ITEM_GREAT_BALL, 53, 0
-	bg_event 4, 35, 3, 7, 0, ITEM_POKE_BALL, 65, 0
-	bg_event 37, 67, 3, 7, 0, ITEM_FULL_HEAL, 55, 0
+	bg_event 35, 39, 3, 7, 0, ITEM_REVIVE
+	bg_event 33, 45, 3, 7, 0, ITEM_GREAT_BALL
+	bg_event 4, 35, 3, 7, 0, ITEM_POKE_BALL
+	bg_event 37, 67, 3, 7, 0, ITEM_FULL_HEAL
 	bg_event 13, 16, 0, 0, 0, Route110_EventScript_1EF34A
 
-Route110_MapEvents:: @ 85291DC
+Route110_MapEvents::
 	map_events Route110_EventObjects, Route110_MapWarps, Route110_MapCoordEvents, Route110_MapBGEvents
-

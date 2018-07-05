@@ -1,4 +1,4 @@
-Route115_EventObjects: @ 852A1BC
+Route115_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_WOMAN_3, 0, 18, 68, 3, 2, 1, 1, 0, 0, Route115_EventScript_1F2973, 0
 	object_event 2, EVENT_OBJ_GFX_OLD_MAN_1, 0, 5, 15, 3, 10, 0, 0, 1, 6, Route115_EventScript_1F298E, 0
 	object_event 3, EVENT_OBJ_GFX_BLACK_BELT, 0, 27, 53, 3, 15, 1, 1, 1, 4, Route115_EventScript_1F2A07, 0
@@ -23,27 +23,26 @@ Route115_EventObjects: @ 852A1BC
 	object_event 22, EVENT_OBJ_GFX_ITEM_BALL, 0, 26, 67, 3, 1, 1, 1, 0, 0, Route115_EventScript_290E6B, 1161
 	object_event 23, EVENT_OBJ_GFX_ITEM_BALL, 0, 12, 14, 3, 1, 1, 1, 0, 0, Route115_EventScript_290E5E, 1144
 
-Route115_MapWarps: @ 852A3E4
+Route115_MapWarps::
 	warp_def 27, 37, 0, 1, MAP_METEOR_FALLS_1F_1R
 	warp_def 21, 6, 0, 0, MAP_TERRA_CAVE_ENTRANCE
 	warp_def 36, 10, 0, 0, MAP_TERRA_CAVE_ENTRANCE
 
-Route115_MapBGEvents: @ 852A3FC
-	bg_event 32, 6, 0, 8, 0, 72, 0, 0
-	bg_event 21, 18, 0, 8, 0, 62, 0, 0
+Route115_MapBGEvents::
+	bg_event 32, 6, 0, 8, 0, 72
+	bg_event 21, 18, 0, 8, 0, 62
 	bg_event 16, 64, 0, 0, 0, Route115_EventScript_1F297C
 	bg_event 25, 38, 3, 0, 0, Route115_EventScript_1F2985
-	bg_event 8, 30, 0, 8, 0, ITEM_CHERI_BERRY, 0, 0
-	bg_event 32, 39, 0, 8, 0, ITEM_BLACK_FLUTE, 0, 0
-	bg_event 26, 15, 0, 8, 0, 52, 0, 0
-	bg_event 23, 8, 0, 8, 0, ITEM_WHITE_FLUTE, 0, 0
-	bg_event 32, 46, 0, 8, 0, 53, 0, 0
-	bg_event 7, 20, 0, 8, 0, ITEM_STARF_BERRY, 0, 0
-	bg_event 8, 20, 0, 8, 0, ITEM_QUICK_CLAW, 0, 0
-	bg_event 25, 24, 0, 8, 0, ITEM_HP_UP, 0, 0
-	bg_event 20, 53, 0, 8, 0, ITEM_HYPER_POTION, 0, 0
-	bg_event 15, 49, 3, 7, 0, ITEM_HEART_SCALE, 97, 0
+	bg_event 8, 30, 0, 8, 0, ITEM_CHERI_BERRY
+	bg_event 32, 39, 0, 8, 0, ITEM_BLACK_FLUTE
+	bg_event 26, 15, 0, 8, 0, 52
+	bg_event 23, 8, 0, 8, 0, ITEM_WHITE_FLUTE
+	bg_event 32, 46, 0, 8, 0, 53
+	bg_event 7, 20, 0, 8, 0, ITEM_STARF_BERRY
+	bg_event 8, 20, 0, 8, 0, ITEM_QUICK_CLAW
+	bg_event 25, 24, 0, 8, 0, ITEM_HP_UP
+	bg_event 20, 53, 0, 8, 0, ITEM_HYPER_POTION
+	bg_event 15, 49, 3, 7, 0, ITEM_HEART_SCALE
 
-Route115_MapEvents:: @ 852A4A4
+Route115_MapEvents::
 	map_events Route115_EventObjects, Route115_MapWarps, 0x0, Route115_MapBGEvents
-

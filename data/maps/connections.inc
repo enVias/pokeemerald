@@ -63,3 +63,4 @@
 	.include "data/maps/SafariZone_Southeast/connections.inc"
 	.include "data/maps/BattleFrontier_OutsideWest/connections.inc"
 	.include "data/maps/BattleFrontier_OutsideEast/connections.inc"
+	.include "data/maps/PalletTown/connections.inc"

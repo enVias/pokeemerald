@@ -2,7 +2,7 @@ PalletTown::
 	.4byte PalletTown_Layout
 	.4byte PalletTown_MapEvents
 	.4byte PalletTown_MapScripts
-	.4byte 0x0
+	.4byte PalletTown_MapConnections
 	.2byte MUS_MISHIRO
 	.2byte 442
 	.byte 88

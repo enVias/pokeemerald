@@ -1,4 +1,4 @@
-Route120_EventObjects: @ 852B3F8
+Route120_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_BERRY_TREE, 0, 4, 79, 3, 12, 0, 0, 0, 46, BerryTreeScript, 0
 	object_event 2, EVENT_OBJ_GFX_BERRY_TREE, 0, 5, 79, 3, 12, 0, 0, 0, 45, BerryTreeScript, 0
 	object_event 3, EVENT_OBJ_GFX_BERRY_TREE, 0, 6, 79, 3, 12, 0, 0, 0, 44, BerryTreeScript, 0
@@ -44,11 +44,11 @@ Route120_EventObjects: @ 852B3F8
 	object_event 43, EVENT_OBJ_GFX_MAN_4, 0, 14, 34, 3, 10, 1, 1, 1, 3, Route120_EventScript_1F596A, 0
 	object_event 44, EVENT_OBJ_GFX_ITEM_BALL, 0, 24, 33, 3, 1, 1, 1, 0, 0, Route120_EventScript_290F7C, 1148
 
-Route120_MapWarps: @ 852B818
+Route120_MapWarps::
 	warp_def 7, 55, 0, 0, MAP_ANCIENT_TOMB
 	warp_def 19, 23, 1, 0, MAP_SCORCHED_SLAB
 
-Route120_MapCoordEvents: @ 852B828
+Route120_MapCoordEvents::
 	coord_event 7, 15, 0, 0, 3, 0, 0, 0x0
 	coord_event 7, 16, 0, 0, 3, 0, 0, 0x0
 	coord_event 22, 61, 3, 0, 3, 0, 0, 0x0
@@ -69,22 +69,21 @@ Route120_MapCoordEvents: @ 852B828
 	coord_event 12, 75, 3, 0, 1, 0, 0, 0x0
 	coord_event 13, 75, 3, 0, 1, 0, 0, 0x0
 
-Route120_MapBGEvents: @ 852B958
+Route120_MapBGEvents::
 	bg_event 27, 3, 3, 0, 0, Route120_EventScript_1F57C5
 	bg_event 38, 88, 3, 0, 0, Route120_EventScript_1F57CE
-	bg_event 28, 62, 0, 8, 0, 101, 0, 0
-	bg_event 30, 62, 0, 8, 0, ITEM_HEART_SCALE, 0, 0
-	bg_event 26, 10, 0, 8, 0, ITEM_LUCKY_PUNCH, 0, 0
-	bg_event 29, 85, 5, 8, 0, 232, 0, 0
-	bg_event 18, 12, 0, 8, 0, ITEM_SUN_STONE, 0, 0
-	bg_event 38, 54, 0, 8, 0, ITEM_SOFT_SAND, 0, 0
-	bg_event 31, 23, 0, 8, 0, ITEM_SPELL_TAG, 0, 0
-	bg_event 9, 1, 3, 7, 0, ITEM_RARE_CANDY, 71, 0
-	bg_event 31, 11, 3, 7, 0, ITEM_REVIVE, 84, 0
-	bg_event 0, 86, 3, 7, 0, ITEM_RARE_CANDY, 69, 0
-	bg_event 24, 42, 3, 7, 0, ITEM_ZINC, 70, 0
-	bg_event 5, 76, 0, 8, 0, ITEM_HARD_STONE, 0, 0
+	bg_event 28, 62, 0, 8, 0, 101
+	bg_event 30, 62, 0, 8, 0, ITEM_HEART_SCALE
+	bg_event 26, 10, 0, 8, 0, ITEM_LUCKY_PUNCH
+	bg_event 29, 85, 5, 8, 0, 232
+	bg_event 18, 12, 0, 8, 0, ITEM_SUN_STONE
+	bg_event 38, 54, 0, 8, 0, ITEM_SOFT_SAND
+	bg_event 31, 23, 0, 8, 0, ITEM_SPELL_TAG
+	bg_event 9, 1, 3, 7, 0, ITEM_RARE_CANDY
+	bg_event 31, 11, 3, 7, 0, ITEM_REVIVE
+	bg_event 0, 86, 3, 7, 0, ITEM_RARE_CANDY
+	bg_event 24, 42, 3, 7, 0, ITEM_ZINC
+	bg_event 5, 76, 0, 8, 0, ITEM_HARD_STONE
 
-Route120_MapEvents:: @ 852BA00
+Route120_MapEvents::
 	map_events Route120_EventObjects, Route120_MapWarps, Route120_MapCoordEvents, Route120_MapBGEvents
-

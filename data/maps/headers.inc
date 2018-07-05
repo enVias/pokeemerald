@@ -518,3 +518,4 @@
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/header.inc"
 	.include "data/maps/PalletTown/header.inc"
 	.include "data/maps/Pallet_Town_House1/header.inc"
+	.include "data/maps/NewMap1/header.inc"
