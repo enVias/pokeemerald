@@ -1,4 +1,4 @@
-Route119_EventObjects: @ 852AD6C
+Route119_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_BERRY_TREE, 0, 24, 5, 3, 12, 0, 0, 0, 34, BerryTreeScript, 0
 	object_event 2, EVENT_OBJ_GFX_BERRY_TREE, 0, 25, 5, 3, 12, 0, 0, 0, 35, BerryTreeScript, 0
 	object_event 3, EVENT_OBJ_GFX_BERRY_TREE, 0, 26, 5, 3, 12, 0, 0, 0, 36, BerryTreeScript, 0
@@ -43,11 +43,11 @@ Route119_EventObjects: @ 852AD6C
 	object_event 42, EVENT_OBJ_GFX_ITEM_BALL, 0, 24, 42, 3, 1, 1, 1, 0, 0, Route119_EventScript_290F3B, 1147
 	object_event 43, EVENT_OBJ_GFX_SCOTT, 0, 28, 25, 3, 8, 0, 0, 0, 0, 0x0, 786
 
-Route119_MapWarps: @ 852B174
+Route119_MapWarps::
 	warp_def 6, 32, 0, 0, MAP_ROUTE119_WEATHER_INSTITUTE_1F
 	warp_def 33, 109, 0, 0, MAP_ROUTE119_HOUSE
 
-Route119_MapCoordEvents: @ 852B184
+Route119_MapCoordEvents::
 	coord_event 25, 31, 0, 0, VAR_0x4072, 0, 0, Route119_EventScript_1F4472
 	coord_event 26, 31, 0, 0, VAR_0x4072, 0, 0, Route119_EventScript_1F447D
 	coord_event 29, 13, 3, 0, 20, 0, 0, 0x0
@@ -72,28 +72,27 @@ Route119_MapCoordEvents: @ 852B184
 	coord_event 20, 137, 3, 0, 2, 0, 0, 0x0
 	coord_event 34, 13, 3, 0, 20, 0, 0, 0x0
 
-Route119_MapBGEvents: @ 852B2F4
+Route119_MapBGEvents::
 	bg_event 9, 33, 0, 0, 0, Route119_EventScript_1F477D
 	bg_event 27, 19, 0, 0, 0, Route119_EventScript_1F4774
-	bg_event 5, 2, 0, 8, 0, ITEM_DRAGON_SCALE, 0, 0
-	bg_event 4, 89, 0, 8, 0, ITEM_LIGHT_BALL, 0, 0
-	bg_event 5, 15, 0, 8, 0, ITEM_POISON_BARB, 0, 0
-	bg_event 7, 101, 3, 8, 0, ITEM_NEVER_MELT_ICE, 0, 0
-	bg_event 34, 24, 3, 8, 0, ITEM_LAX_INCENSE, 0, 0
-	bg_event 31, 73, 3, 8, 0, 231, 0, 0
-	bg_event 16, 81, 0, 8, 0, ITEM_TINY_MUSHROOM, 0, 0
-	bg_event 16, 28, 0, 8, 0, 113, 0, 0
-	bg_event 17, 82, 3, 7, 0, ITEM_CALCIUM, 5, 0
-	bg_event 38, 63, 3, 7, 0, ITEM_ULTRA_BALL, 6, 0
-	bg_event 26, 81, 0, 8, 0, ITEM_FULL_HEAL, 0, 0
-	bg_event 19, 76, 0, 8, 0, ITEM_LANSAT_BERRY, 0, 0
-	bg_event 18, 76, 0, 8, 0, ITEM_DEEP_SEA_SCALE, 0, 0
-	bg_event 4, 15, 0, 8, 0, ITEM_METAL_POWDER, 0, 0
-	bg_event 6, 2, 0, 8, 0, 233, 0, 0
-	bg_event 26, 120, 3, 7, 0, ITEM_FULL_HEAL, 68, 0
-	bg_event 20, 29, 3, 7, 0, ITEM_MAX_ETHER, 87, 0
+	bg_event 5, 2, 0, 8, 0, ITEM_DRAGON_SCALE
+	bg_event 4, 89, 0, 8, 0, ITEM_LIGHT_BALL
+	bg_event 5, 15, 0, 8, 0, ITEM_POISON_BARB
+	bg_event 7, 101, 3, 8, 0, ITEM_NEVER_MELT_ICE
+	bg_event 34, 24, 3, 8, 0, ITEM_LAX_INCENSE
+	bg_event 31, 73, 3, 8, 0, 231
+	bg_event 16, 81, 0, 8, 0, ITEM_TINY_MUSHROOM
+	bg_event 16, 28, 0, 8, 0, 113
+	bg_event 17, 82, 3, 7, 0, ITEM_CALCIUM
+	bg_event 38, 63, 3, 7, 0, ITEM_ULTRA_BALL
+	bg_event 26, 81, 0, 8, 0, ITEM_FULL_HEAL
+	bg_event 19, 76, 0, 8, 0, ITEM_LANSAT_BERRY
+	bg_event 18, 76, 0, 8, 0, ITEM_DEEP_SEA_SCALE
+	bg_event 4, 15, 0, 8, 0, ITEM_METAL_POWDER
+	bg_event 6, 2, 0, 8, 0, 233
+	bg_event 26, 120, 3, 7, 0, ITEM_FULL_HEAL
+	bg_event 20, 29, 3, 7, 0, ITEM_MAX_ETHER
 	bg_event 28, 9, 0, 0, 0, Route119_EventScript_1F49E3
 
-Route119_MapEvents:: @ 852B3E4
+Route119_MapEvents::
 	map_events Route119_EventObjects, Route119_MapWarps, Route119_MapCoordEvents, Route119_MapBGEvents
-

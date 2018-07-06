@@ -1,4 +1,4 @@
-Route121_EventObjects: @ 852BA14
+Route121_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_WOMAN_4, 0, 29, 14, 3, 10, 1, 1, 0, 0, Route121_EventScript_1F5DFD, 0
 	object_event 2, EVENT_OBJ_GFX_BERRY_TREE, 0, 14, 2, 3, 12, 0, 0, 0, 47, BerryTreeScript, 0
 	object_event 3, EVENT_OBJ_GFX_BERRY_TREE, 0, 15, 2, 3, 12, 0, 0, 0, 48, BerryTreeScript, 0
@@ -29,27 +29,26 @@ Route121_EventObjects: @ 852BA14
 	object_event 28, EVENT_OBJ_GFX_ITEM_BALL, 0, 60, 10, 3, 1, 1, 1, 0, 0, Route121_EventScript_290F96, 1149
 	object_event 29, EVENT_OBJ_GFX_ITEM_BALL, 0, 38, 13, 3, 1, 1, 1, 0, 0, Route121_EventScript_290FA3, 1150
 
-Route121_MapWarps: @ 852BCCC
+Route121_MapWarps::
 	warp_def 37, 5, 0, 2, MAP_ROUTE121_SAFARI_ZONE_ENTRANCE
 
-Route121_MapCoordEvents: @ 852BCD4
+Route121_MapCoordEvents::
 	coord_event 25, 5, 3, 0, VAR_0x4074, 0, 0, Route121_EventScript_1F5E18
 	coord_event 25, 6, 3, 0, VAR_0x4074, 0, 0, Route121_EventScript_1F5E18
 	coord_event 25, 7, 3, 0, VAR_0x4074, 0, 0, Route121_EventScript_1F5E18
 	coord_event 25, 8, 3, 0, VAR_0x4074, 0, 0, Route121_EventScript_1F5E18
 
-Route121_MapBGEvents: @ 852BD14
+Route121_MapBGEvents::
 	bg_event 32, 14, 0, 0, 0, Route121_EventScript_1F5E06
-	bg_event 40, 11, 0, 8, 0, ITEM_PREMIER_BALL, 0, 0
-	bg_event 18, 13, 0, 8, 0, ITEM_SUPER_POTION, 0, 0
-	bg_event 43, 7, 0, 8, 0, ITEM_NOMEL_BERRY, 0, 0
-	bg_event 42, 7, 0, 8, 0, ITEM_APICOT_BERRY, 0, 0
+	bg_event 40, 11, 0, 8, 0, ITEM_PREMIER_BALL
+	bg_event 18, 13, 0, 8, 0, ITEM_SUPER_POTION
+	bg_event 43, 7, 0, 8, 0, ITEM_NOMEL_BERRY
+	bg_event 42, 7, 0, 8, 0, ITEM_APICOT_BERRY
 	bg_event 39, 6, 0, 0, 0, Route121_EventScript_1F5E0F
-	bg_event 23, 10, 3, 7, 0, ITEM_HP_UP, 39, 0
-	bg_event 58, 3, 3, 7, 0, ITEM_NUGGET, 40, 0
-	bg_event 72, 5, 3, 7, 0, ITEM_FULL_HEAL, 73, 0
-	bg_event 68, 8, 3, 7, 0, ITEM_MAX_REVIVE, 100, 0
+	bg_event 23, 10, 3, 7, 0, ITEM_HP_UP
+	bg_event 58, 3, 3, 7, 0, ITEM_NUGGET
+	bg_event 72, 5, 3, 7, 0, ITEM_FULL_HEAL
+	bg_event 68, 8, 3, 7, 0, ITEM_MAX_REVIVE
 
-Route121_MapEvents:: @ 852BD8C
+Route121_MapEvents::
 	map_events Route121_EventObjects, Route121_MapWarps, Route121_MapCoordEvents, Route121_MapBGEvents
-

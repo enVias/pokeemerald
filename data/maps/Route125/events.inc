@@ -1,4 +1,4 @@
-Route125_EventObjects: @ 852C50C
+Route125_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_SWIMMER_M, 0, 7, 31, 1, 28, 0, 0, 1, 2, Route125_EventScript_1F67A4, 0
 	object_event 2, EVENT_OBJ_GFX_SWIMMER_M, 0, 45, 9, 1, 10, 2, 5, 1, 2, Route125_EventScript_1F67BB, 0
 	object_event 3, EVENT_OBJ_GFX_SWIMMER_F, 0, 38, 24, 1, 28, 6, 0, 1, 3, Route125_EventScript_1F67D2, 0
@@ -10,15 +10,14 @@ Route125_EventObjects: @ 852C50C
 	object_event 9, EVENT_OBJ_GFX_OLD_MAN_1, 0, 48, 19, 3, 27, 2, 1, 1, 3, Route125_EventScript_1F68AF, 0
 	object_event 10, EVENT_OBJ_GFX_ITEM_BALL, 0, 46, 17, 3, 1, 1, 1, 0, 0, Route125_EventScript_291018, 1154
 
-Route125_MapWarps: @ 852C5FC
+Route125_MapWarps::
 	warp_def 22, 19, 0, 0, MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM
 
-Route125_MapBGEvents: @ 852C604
-	bg_event 53, 10, 0, 8, 0, ITEM_ULTRA_BALL, 0, 0
-	bg_event 55, 11, 0, 8, 0, ITEM_HEAL_POWDER, 0, 0
-	bg_event 7, 25, 0, 8, 0, ITEM_RETRO_MAIL, 0, 0
-	bg_event 24, 32, 0, 8, 0, ITEM_PINAP_BERRY, 0, 0
+Route125_MapBGEvents::
+	bg_event 53, 10, 0, 8, 0, ITEM_ULTRA_BALL
+	bg_event 55, 11, 0, 8, 0, ITEM_HEAL_POWDER
+	bg_event 7, 25, 0, 8, 0, ITEM_RETRO_MAIL
+	bg_event 24, 32, 0, 8, 0, ITEM_PINAP_BERRY
 
-Route125_MapEvents:: @ 852C634
+Route125_MapEvents::
 	map_events Route125_EventObjects, Route125_MapWarps, 0x0, Route125_MapBGEvents
-

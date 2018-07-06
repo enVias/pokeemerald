@@ -1,4 +1,4 @@
-Route104_EventObjects: @ 85282E4
+Route104_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_BUG_CATCHER, 0, 15, 60, 3, 9, 0, 0, 0, 0, Route104_EventScript_1ED00F, 0
 	object_event 2, EVENT_OBJ_GFX_GIRL_2, 0, 25, 49, 3, 2, 1, 1, 0, 0, Route104_EventScript_1ED006, 0
 	object_event 3, EVENT_OBJ_GFX_LASS, 0, 31, 24, 3, 9, 0, 0, 1, 7, Route104_EventScript_1ED38D, 0
@@ -34,7 +34,7 @@ Route104_EventObjects: @ 85282E4
 	object_event 33, EVENT_OBJ_GFX_FISHERMAN, 0, 15, 59, 3, 9, 0, 0, 1, 0, Route104_EventScript_1ED5D5, 0
 	object_event 34, EVENT_OBJ_GFX_HIPSTER, 0, 17, 50, 0, 1, 1, 1, 0, 0, Route104_EventScript_1ECC9E, 719
 
-Route104_MapWarps: @ 8528614
+Route104_MapWarps::
 	warp_def 17, 50, 0, 0, MAP_ROUTE104_MR_BRINEYS_HOUSE
 	warp_def 5, 18, 0, 0, MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP
 	warp_def 10, 30, 3, 0, MAP_PETALBURG_WOODS
@@ -44,21 +44,20 @@ Route104_MapWarps: @ 8528614
 	warp_def 32, 42, 3, 4, MAP_PETALBURG_WOODS
 	warp_def 33, 42, 3, 5, MAP_PETALBURG_WOODS
 
-Route104_MapCoordEvents: @ 8528654
+Route104_MapCoordEvents::
 	coord_event 17, 51, 3, 0, VAR_0x4063, 1, 0, Route104_EventScript_1ECCB3
 
-Route104_MapBGEvents: @ 8528664
+Route104_MapBGEvents::
 	bg_event 20, 50, 0, 0, 0, Route104_EventScript_1ED018
 	bg_event 27, 66, 0, 0, 0, Route104_EventScript_1ED021
 	bg_event 23, 5, 0, 0, 0, Route104_EventScript_1ED02A
 	bg_event 7, 20, 0, 0, 0, Route104_EventScript_1ED033
 	bg_event 17, 23, 3, 0, 0, Route104_EventScript_1ED03C
-	bg_event 7, 6, 3, 7, 0, ITEM_SUPER_POTION, 44, 0
-	bg_event 3, 9, 3, 7, 0, ITEM_POKE_BALL, 62, 0
-	bg_event 14, 55, 3, 7, 0, ITEM_POTION, 37, 0
-	bg_event 16, 72, 3, 7, 0, ITEM_ANTIDOTE, 85, 0
-	bg_event 16, 64, 3, 7, 0, ITEM_HEART_SCALE, 88, 0
+	bg_event 7, 6, 3, 7, 0, ITEM_SUPER_POTION
+	bg_event 3, 9, 3, 7, 0, ITEM_POKE_BALL
+	bg_event 14, 55, 3, 7, 0, ITEM_POTION
+	bg_event 16, 72, 3, 7, 0, ITEM_ANTIDOTE
+	bg_event 16, 64, 3, 7, 0, ITEM_HEART_SCALE
 
-Route104_MapEvents:: @ 85286DC
+Route104_MapEvents::
 	map_events Route104_EventObjects, Route104_MapWarps, Route104_MapCoordEvents, Route104_MapBGEvents
-

@@ -3223,7 +3223,8 @@ gUnknown_08272DB3:: @ 8272DB3
 	.string "Want to give a nickname to\nthe {STR_VAR_2} you received?$"
 
 gUnknown_08272DE3:: @ 8272DE3
-	.string "{PLAYER} is out of usable\nPOKéMON!\p{PLAYER} whited out!$"
+//	.string "{PLAYER} is out of usable\nPOKéMON!\p{PLAYER} whited out!$"
+	.string "{PLAYER}’s POKéMON are too tired to\n continue.\pLet’s give them a rest.$"
 
 gUnknown_08272E0F:: @ 8272E0F
 	.string "Registered {STR_VAR_1} {STR_VAR_2}\nin the POKéNAV.$"
@@ -14827,3 +14828,9 @@ gText_082C877B:: @ 82C877B
 	.align 2
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/PalletTown/scripts.inc"
+	.include "data/maps/Pallet_Town_House1/scripts.inc"
+
+	.include "data/maps/YippyTown/scripts.inc"
+	.include "data/maps/YippyTown/text.inc"

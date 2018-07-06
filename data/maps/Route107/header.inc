@@ -1,4 +1,4 @@
-Route107: @ 8482720
+Route107::
 	.4byte Route107_Layout
 	.4byte Route107_MapEvents
 	.4byte Route107_MapScripts
@@ -12,4 +12,3 @@ Route107: @ 8482720
 	.2byte 0
 	.byte 13
 	.byte 0
-

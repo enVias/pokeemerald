@@ -129,7 +129,6 @@ extern void door_upload_tiles(void);
 extern void RotatingGate_InitPuzzleAndGraphics(void);
 extern void sub_80AF168(void);
 extern void sub_80AF3C8(void);
-extern void ExecuteTruckSequence(void);
 extern void sub_80A0A38(void);
 extern void trainer_hill_map_load_related(void);
 extern void sub_8087D74(void);
@@ -395,11 +394,11 @@ static void (*const gUnknown_08339E00[])(struct LinkPlayerEventObject *, struct 
 void DoWhiteOut(void)
 {
     ScriptContext2_RunNewScript(EventScript_WhiteOut);
-    SetMoney(&gSaveBlock1Ptr->money, GetMoney(&gSaveBlock1Ptr->money) / 2);
+ //   SetMoney(&gSaveBlock1Ptr->money, GetMoney(&gSaveBlock1Ptr->money) / 2);
     HealPlayerParty();
-    Overworld_ResetStateAfterWhiteOut();
-    Overworld_SetWarpDestToLastHealLoc();
-    warp_in();
+ //   Overworld_ResetStateAfterWhiteOut();
+ //   Overworld_SetWarpDestToLastHealLoc();
+ //   warp_in();
 }
 
 void Overworld_ResetStateAfterFly(void)
@@ -1553,7 +1552,6 @@ void CB2_NewGame(void)
     PlayTimeCounter_Start();
     ScriptContext1_Init();
     ScriptContext2_Disable();
-    gFieldCallback = ExecuteTruckSequence;
     gFieldCallback2 = NULL;
     do_load_map_stuff_loop(&gMain.state);
     SetFieldVBlankCallback();

@@ -441,3 +441,6 @@ gMapLayouts::
 	.4byte SootopolisCity_MysteryEventsHouse_1F_Layout
 	.4byte SootopolisCity_MysteryEventsHouse_B1F_Layout
 	.4byte UnknownMap_08481DBC_Layout
+	.4byte PalletTown_Layout
+	.4byte Pallet_Town_House1_Layout
+	.4byte YippyTown_Layout

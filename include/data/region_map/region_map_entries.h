@@ -84,7 +84,7 @@ static const u8 sMapName_SkyPillar[] = _("SKY PILLAR");
 static const u8 sMapName_SecretBase[] = _("SECRET BASE");
 static const u8 sMapName_None[] = _("");
 static const u8 sMapName_PalletTown[] = _("PALLET TOWN");
-static const u8 sMapName_ViridianCity[] = _("VIRIDIAN CITY");
+static const u8 sMapName_YippyTown[] = _("YIPPY TOWN");
 static const u8 sMapName_PewterCity[] = _("PEWTER CITY");
 static const u8 sMapName_CeruleanCity[] = _("CERULEAN CITY");
 static const u8 sMapName_LavenderTown[] = _("LAVENDER TOWN");
@@ -292,7 +292,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     { 0,  0, 1, 1, sMapName_SecretBase},
     { 0,  0, 1, 1, sMapName_None},
     { 0,  0, 1, 1, sMapName_PalletTown},
-    { 0,  0, 1, 1, sMapName_ViridianCity},
+    { 0,  0, 1, 1, sMapName_YippyTown},
     { 0,  0, 1, 1, sMapName_PewterCity},
     { 0,  0, 1, 1, sMapName_CeruleanCity},
     { 0,  0, 1, 1, sMapName_LavenderTown},

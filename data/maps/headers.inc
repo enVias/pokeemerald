@@ -516,3 +516,6 @@
 	.include "data/maps/Route119_WeatherInstitute_2F/header.inc"
 	.include "data/maps/Route119_House/header.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/header.inc"
+	.include "data/maps/PalletTown/header.inc"
+	.include "data/maps/Pallet_Town_House1/header.inc"
+	.include "data/maps/YippyTown/header.inc"
