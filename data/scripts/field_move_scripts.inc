@@ -8,6 +8,7 @@ Route117_EventScript_2906BB:: @ 82906BB
 Route118_EventScript_2906BB:: @ 82906BB
 Route120_EventScript_2906BB:: @ 82906BB
 Route121_EventScript_2906BB:: @ 82906BB
+YippyTown_EventScript_2906BB:: @ 82906BB
 Route123_EventScript_2906BB:: @ 82906BB
 	lockall
 	checkflag FLAG_BADGE01_GET
